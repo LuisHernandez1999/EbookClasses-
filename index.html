@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Estúdio de Tatuagem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: url('/imagems/young-woman-tattooed-back-exudes-sensuality-elegance-generated-by-ai.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 36px;
+        }
+
+        #slogan {
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        #social-icons {
+            font-size: 40px;
+        }
+
+        .btn {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Antônio`s Tattoo</h1>
+        <p id="slogan">Seu destino para tatuagens incríveis!</p>
+    </header>
+    <footer>
+        <div id="social-icons">
+            <a href="https://wa.me/556293564236"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/_antoniotattoo?igshid=NzZlODBkYWE4Ng=="><i class="fab fa-instagram">
+            </i></a>
+            <a href="antoniotattoobr@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <a class="btn" href="page3.html">Sobre</a>
+        <a class="btn" href="pag2.html">Galeria</a>
+    </footer>
+    <main>
+    </main>
+    <script>
+        document.getElementById('galeria-link').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            var galeriaContent = document.getElementById('galeria-content');
+            galeriaContent.style.display = (galeriaContent.style.display === 'none' || galeriaContent.style.display === '') ? 'block' : 'none';
+            document.getElementById('sobre-link').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            var galeriaContent = document.getElementById('galeria-content');
+            galeriaContent.style.display = (galeriaContent.style.display === 'none' || galeriaContent.style.display === '') ? 'block' : 'none';
+        });
+        });
+    </script>
+</body>
+</html>
